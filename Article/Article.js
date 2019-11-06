@@ -85,6 +85,14 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: `How to Succeed at Lambda School`,
+    date: `Nov 5th, 2019`,
+    firstParagraph:`Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!`
   }
 ];
 
