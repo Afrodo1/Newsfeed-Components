@@ -93,7 +93,7 @@ const data = [
     Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
     Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
     Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!`
-  }
+  }  
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -156,6 +156,13 @@ date.textContent = data.date;
 p1.textContent = data.firstParagraph;
 p2.textContent = data.secondParagraph;
 p3.textContent = data.thirdParagraph;
+btnExpnd.textContent='\u25bc';
+
+//Adding an event listener 
+btnExpnd.addEventListener('click',()=>{
+div.classList.toggle("article-open");
+})
+
 
 //return it all
 
