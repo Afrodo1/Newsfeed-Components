@@ -85,7 +85,15 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
-  }
+  },
+  {
+    title: `How to Succeed at Lambda School`,
+    date: `Nov 5th, 2019`,
+    firstParagraph:`Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!
+    Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!! Believe it! That's my Nindō Way! i'M gonna be Hokage!!!`
+  }  
 ];
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
@@ -112,3 +120,58 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+const article = (data) =>{
+
+  //Elements
+
+  const div = document.createElement('div');
+  const title = document.createElement('h2');
+  const date = document.createElement('p');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
+  const p3 = document.createElement('p');
+  const btnExpnd = document.createElement('span');
+
+  //adding classes
+
+  div.classList.add('article');
+  date.classList.add('date');
+  btnExpnd.classList.add('expandButton');
+
+
+//appending
+
+div.appendChild(title);
+div.appendChild(date);
+div.appendChild(p1);
+div.appendChild(p2);
+div.appendChild(p3);
+div.appendChild(btnExpnd);
+
+//content
+
+title.textContent = data.title;
+date.textContent = data.date;
+p1.textContent = data.firstParagraph;
+p2.textContent = data.secondParagraph;
+p3.textContent = data.thirdParagraph;
+btnExpnd.textContent='\u25bc';
+
+//Adding an event listener 
+btnExpnd.addEventListener('click',()=>{
+div.classList.toggle("article-open");
+})
+
+
+//return it all
+
+return div;
+
+}
+
+const art = document.querySelector('.articles');
+
+data.forEach( (e) => {
+  art.appendChild(article(e))
+})
